@@ -1,0 +1,11 @@
+{% extends "newPost.html" %}
+
+{% block form_block %}
+    {{ csrf_token }}
+    <form>
+        <input type="text" value={{ postTitle }}/>
+        <input type="text" value={{ postBody }}/>
+
+        <button type="submit">Post!</button>
+    </form>
+{% endblock %}
